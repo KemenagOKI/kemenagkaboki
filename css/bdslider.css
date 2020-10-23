@@ -123,4 +123,10 @@
             font-size: 10px;
             line-height: 20px;
         }
+        
+     .flexslider .slides img {
+    height: 180px;
+    -moz-user-select: none;
+         .flex-caption.overlayDark {display:none;
+}
     }
