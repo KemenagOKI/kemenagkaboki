@@ -226,7 +226,7 @@ html[xmlns] .flexslider .slides {
   background: rgba(0, 0, 0, 0.7);
 }
 .flex-control-paging li a.flex-active {
-  background: #000;
+  background: linear-gradient(63deg, rgba(60,121,9,0.8603816526610644) 0%, rgba(39,156,12,0.7035189075630253) 5%, rgba(255,252,0,0.4150035014005602) 100%);
   background: rgba(0, 0, 0, 0.9);
   cursor: default;
 }
