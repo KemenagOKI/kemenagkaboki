@@ -1,20 +1,13 @@
-/*
- * jQuery FlexSlider v2.6.0
- * http://www.woothemes.com/flexslider/
- *
- * Copyright 2012 WooThemes
- * Free to use under the GPLv2 and later license.
- * http://www.gnu.org/licenses/gpl-2.0.html
- *
- * Contributing author: Tyler Smith (@mbmufffin)
- *
- */
 /* ====================================================================================================================
  * FONT-FACE
  * ====================================================================================================================*/
+/*MAKE SURE YOUR FONTS POINT TO THE CORRECT FOLDER!*/
 @font-face {
   font-family: 'flexslider-icon';
+  /*THIS-->*/
   src: url('fonts/flexslider-icon.eot');
+  /**MIGHT HAVE TO BE THIS- ../ TO GO OUT OF THE CSS FOLDER - THEN INTO A FONTS FOLDER*/
+  src: url('../fonts/flexslider-icon.eot');
   src: url('fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('fonts/flexslider-icon.woff') format('woff'), url('fonts/flexslider-icon.ttf') format('truetype'), url('fonts/flexslider-icon.svg#flexslider-icon') format('svg');
   font-weight: normal;
   font-style: normal;
@@ -74,8 +67,8 @@ html[xmlns] .flexslider .slides {
  * ====================================================================================================================*/
 .flexslider {
   margin: 0 0 60px;
-  background: #ffffff;
-  border: 4px solid #ffffff;
+  background: #fff;
+  border: 4px solid #fff;
   position: relative;
   zoom: 1;
   -webkit-border-radius: 4px;
@@ -209,7 +202,8 @@ html[xmlns] .flexslider .slides {
   width: 11px;
   height: 11px;
   display: block;
-  background: #1fbb90;
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
   cursor: pointer;
   text-indent: -9999px;
   -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
@@ -225,7 +219,8 @@ html[xmlns] .flexslider .slides {
   background: rgba(0, 0, 0, 0.7);
 }
 .flex-control-paging li a.flex-active {
-  background: linear-gradient(63deg, rgba(60,121,9,0.8603816526610644) 0%, rgba(39,156,12,0.7035189075630253) 5%, rgba(255,252,0,0.4150035014005602) 100%);
+  background: #000;
+  background: rgba(0, 0, 0, 0.9);
   cursor: default;
 }
 .flex-control-thumbs {
