@@ -133,6 +133,7 @@ html[xmlns] .flexslider .slides {
 }
 .flex-direction-nav a.flex-next:before {
   content: '\f002';
+  color:#1fbb90;
 }
 .flex-direction-nav .flex-prev {
   left: -50px;
