@@ -129,4 +129,15 @@
     -moz-user-select: none;
          .flex-caption.overlayDark {display:none;
 }
+         
+    
+    .flex-caption.overlayDark {
+        background: #1fbb9000;
+       
+    }
+    .flex-direction-nav before{
+        display:none;
+         }
+         
+         
     }
