@@ -278,6 +278,9 @@ html[xmlns] .flexslider .slides {
 .flex-direction-nav a.flex-next:before {
   display:none;
 }
+.flexslider:hover .flex-direction-nav .flex-next {
+   display:none;
+}
 .flex-direction-nav .flex-prev {
    display:none;
 }
