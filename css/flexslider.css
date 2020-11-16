@@ -1,13 +1,20 @@
+/*
+ * jQuery FlexSlider v2.7.2
+ * https://www.woocommerce.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 and later license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ *
+ */
 /* ====================================================================================================================
  * FONT-FACE
  * ====================================================================================================================*/
-/*MAKE SURE YOUR FONTS POINT TO THE CORRECT FOLDER!*/
 @font-face {
   font-family: 'flexslider-icon';
-  /*THIS-->*/
   src: url('fonts/flexslider-icon.eot');
-  /**MIGHT HAVE TO BE THIS- ../ TO GO OUT OF THE CSS FOLDER - THEN INTO A FONTS FOLDER*/
-  src: url('../fonts/flexslider-icon.eot');
   src: url('fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('fonts/flexslider-icon.woff') format('woff'), url('fonts/flexslider-icon.ttf') format('truetype'), url('fonts/flexslider-icon.svg#flexslider-icon') format('svg');
   font-weight: normal;
   font-style: normal;
@@ -70,7 +77,7 @@ html[xmlns] .flexslider .slides {
   background: #fff;
   border: 4px solid #fff;
   position: relative;
-  zoom: 999999;
+  zoom: 1;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -96,6 +103,11 @@ html[xmlns] .flexslider .slides {
 }
 .loading .flex-viewport {
   max-height: 300px;
+}
+@-moz-document url-prefix() {
+  .loading .flex-viewport {
+    max-height: none;
+  }
 }
 .carousel li {
   margin-right: 5px;
@@ -128,12 +140,11 @@ html[xmlns] .flexslider .slides {
   font-size: 40px;
   display: inline-block;
   content: '\f001';
-  color: #1fbb90;
+  color: rgba(0, 0, 0, 0.8);
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
 }
 .flex-direction-nav a.flex-next:before {
   content: '\f002';
-  color:#1fbb90;
 }
 .flex-direction-nav .flex-prev {
   left: -50px;
@@ -203,7 +214,7 @@ html[xmlns] .flexslider .slides {
   width: 11px;
   height: 11px;
   display: block;
-  background: #1fbb90;
+  background: #666;
   background: rgba(0, 0, 0, 0.5);
   cursor: pointer;
   text-indent: -9999px;
@@ -216,11 +227,11 @@ html[xmlns] .flexslider .slides {
   border-radius: 20px;
 }
 .flex-control-paging li a:hover {
-  background: #19bfe5;
+  background: #333;
   background: rgba(0, 0, 0, 0.7);
 }
 .flex-control-paging li a.flex-active {
-  background: #19bfe5;
+  background: #000;
   background: rgba(0, 0, 0, 0.9);
   cursor: default;
 }
@@ -266,23 +277,4 @@ html[xmlns] .flexslider .slides {
     opacity: 1;
     right: 10px;
   }
-  
-.flex-direction-nav a:before {
-  font-family: "flexslider-icon";
-  font-size: 40px;
-  display: inline-block;
-  content: '\f001';
-  color: #1fbb90;
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
-}
-.flex-direction-nav a.flex-next:before {
-  display:none;
-}
-.flexslider:hover .flex-direction-nav .flex-next {
-   display:none;
-}
-.flex-direction-nav .flex-prev {
-   display:none;
-}
-
 }
